@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-website-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner-friendly portfolio builder using Express and Supabase PostgreSQL",
+  "main": "server.js",
+  "scripts": {"start":"node server.js","dev":"node --watch server.js","check":"node --check server.js && node --check supabase.js && node --check routes/auth.js && node --check routes/portfolio.js && node --check routes/public.js && node --check routes/admin.js && node --check middleware/auth.js && node --check utils/validation.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
